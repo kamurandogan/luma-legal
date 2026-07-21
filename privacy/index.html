@@ -125,7 +125,7 @@
     </header>
 
     <h1>Privacy Policy</h1>
-    <p class="meta">Last updated: 2 July 2026</p>
+    <p class="meta">Last updated: 21 July 2026</p>
 
     <p class="lead">
       This Privacy Policy explains what information the <strong>Luma</strong> app
@@ -145,7 +145,9 @@
 
     <h3>Account information</h3>
     <ul>
-      <li>Your <strong>email address</strong>, used to create and sign in to your account.</li>
+      <li>Your <strong>username</strong>, used to create and sign in to your account.</li>
+      <li>Your <strong>email address</strong>, collected at sign-up and used only to
+        recover your account. We do not use it to sign you in.</li>
       <li>Your <strong>password</strong>, which we store only as a securely hashed value
         (Argon2) — we never store or see your password in plain text.</li>
       <li>An optional <strong>display name</strong>, if you provide one.</li>
@@ -178,7 +180,20 @@
         can deliver notifications, if you enable them.</li>
       <li>Operational telemetry tied to your conversations (e.g. message counts, model
         latency, token/cost accounting) used to keep the service reliable and debug issues.</li>
+      <li><strong>Product analytics</strong> (via Google Analytics for Firebase): which
+        screens you open, whether you complete sign-up and onboarding, counts of messages
+        and photo requests, and error or failure events. We use this to find broken flows
+        and fix them — never for advertising.</li>
+      <li><strong>Crash and error reports</strong> (via Sentry): the type of error, the
+        screen it happened on, and technical diagnostics, so failures that would otherwise
+        be silent can be found and fixed.</li>
     </ul>
+    <div class="callout">
+      Your <strong>chat messages are never sent to analytics or crash reporting</strong>.
+      Those systems receive only counts, screen names and error codes — never message text,
+      your username, or your email address. Your account appears there only as an opaque
+      identifier, and this data is never used for advertising or sold to anyone.
+    </div>
 
     <h3>Purchases</h3>
     <ul>
@@ -228,6 +243,8 @@
         <tr><td>Cloudflare R2</td><td>Storing generated images</td></tr>
         <tr><td>Firebase Cloud Messaging (Google)</td><td>Delivering push notifications</td></tr>
         <tr><td>RevenueCat, Apple App Store, Google Play</td><td>Processing in-app purchases</td></tr>
+        <tr><td>Google Analytics for Firebase</td><td>Product usage analytics (no message content)</td></tr>
+        <tr><td>Sentry</td><td>Crash and error reporting (no message content)</td></tr>
       </tbody>
     </table>
 
